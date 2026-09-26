@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>Road trip Washington · Virginie et Appalaches</title>
+<title>Road trip Washington · 4 itinéraires</title>
 <style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 </head>
 <body>
-<iframe sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer" title="Road trip Washington · Virginie et Appalaches" srcdoc="&lt;!doctype html&gt;
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Road trip Washington · 4 itinéraires" srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;Road trip Washington · Virginie et Appalaches&lt;/title&gt;
+&lt;title&gt;Road trip Washington · 4 itinéraires&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(
@@ -1041,6 +1041,8 @@ html&gt;body{padding:0}&lt;/style&gt;
   &lt;div class=&quot;viz-controls&quot; aria-label=&quot;Contrôles de la carte&quot;&gt;
     &lt;button class=&quot;btn&quot; id=&quot;pick-virginia&quot; type=&quot;button&quot; aria-pressed=&quot;true&quot;&gt;Virginie · Yorktown &amp; rodéo&lt;/button&gt;
     &lt;button class=&quot;btn&quot; id=&quot;pick-appalachia&quot; type=&quot;button&quot; aria-pressed=&quot;false&quot;&gt;Appalaches · Bridge Day&lt;/button&gt;
+    &lt;button class=&quot;btn&quot; id=&quot;pick-mix&quot; type=&quot;button&quot; aria-pressed=&quot;false&quot;&gt;Mix Harriet–Guillaume&lt;/button&gt;
+    &lt;button class=&quot;btn&quot; id=&quot;pick-pittsburgh&quot; type=&quot;button&quot; aria-pressed=&quot;false&quot;&gt;Harriet · Pittsburgh&lt;/button&gt;
     &lt;label class=&quot;form-check form-switch&quot;&gt;
       &lt;input class=&quot;form-check-input&quot; id=&quot;show-alternatives&quot; type=&quot;checkbox&quot; checked&gt;
       &lt;span class=&quot;form-check-label&quot;&gt;Événements alternatifs&lt;/span&gt;
@@ -1054,8 +1056,8 @@ html&gt;body{padding:0}&lt;/style&gt;
 
   &lt;div class=&quot;map-shell&quot;&gt;
     &lt;svg role=&quot;img&quot; aria-labelledby=&quot;trip-map-title trip-map-desc&quot;&gt;
-      &lt;title id=&quot;trip-map-title&quot;&gt;Carte interactive des boucles Virginie et Appalaches depuis Washington&lt;/title&gt;
-      &lt;desc id=&quot;trip-map-desc&quot;&gt;La carte présente la boucle sélectionnée, toutes les visites recommandées et les événements alternatifs du 17 octobre 2026.&lt;/desc&gt;
+      &lt;title id=&quot;trip-map-title&quot;&gt;Carte interactive de quatre boucles depuis Washington&lt;/title&gt;
+      &lt;desc id=&quot;trip-map-desc&quot;&gt;La carte présente la boucle sélectionnée, les visites recommandées, les hébergements proposés par Harriet et les événements alternatifs.&lt;/desc&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 
@@ -1064,6 +1066,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     &lt;span&gt;&lt;i class=&quot;legend-dot history&quot;&gt;&lt;/i&gt;Histoire&lt;/span&gt;
     &lt;span&gt;&lt;i class=&quot;legend-dot event&quot;&gt;&lt;/i&gt;Événement&lt;/span&gt;
     &lt;span&gt;&lt;i class=&quot;legend-dot activity&quot;&gt;&lt;/i&gt;Activité&lt;/span&gt;
+    &lt;span&gt;&lt;i class=&quot;legend-dot lodging&quot;&gt;&lt;/i&gt;Hébergement Harriet&lt;/span&gt;
     &lt;span&gt;&lt;i class=&quot;legend-dot alternative&quot;&gt;&lt;/i&gt;Alternative du 17 oct.&lt;/span&gt;
   &lt;/div&gt;
 
@@ -1123,6 +1126,7 @@ html&gt;body{padding:0}&lt;/style&gt;
   #dc-trip-switch-map .legend-dot.event { background: var(--viz-series-3); }
   #dc-trip-switch-map .legend-dot.activity { background: var(--viz-series-4); }
   #dc-trip-switch-map .legend-dot.alternative { background: var(--viz-series-5); }
+  #dc-trip-switch-map .legend-dot.lodging { background: var(--viz-series-6); }
   #dc-trip-switch-map .point-picker { margin-top: 0.3rem; }
   #dc-trip-switch-map .point-picker .form-label { min-width: min(100%, 360px); }
   #dc-trip-switch-map .point-detail { margin-top: 0.65rem; }
@@ -1154,9 +1158,21 @@ html&gt;body{padding:0}&lt;/style&gt;
   const typeColors = {
     nature:&quot;var(--viz-series-1)&quot;, history:&quot;var(--viz-series-2)&quot;,
     event:&quot;var(--viz-series-3)&quot;, activity:&quot;var(--viz-series-4)&quot;,
-    alternative:&quot;var(--viz-series-5)&quot;
+    alternative:&quot;var(--viz-series-5)&quot;, lodging:&quot;var(--viz-series-6)&quot;
   };
-  const typeLabels = {nature:&quot;Nature&quot;, history:&quot;Histoire&quot;, event:&quot;Événement&quot;, activity:&quot;Activité&quot;, alternative:&quot;Alternative&quot;};
+  const typeLabels = {nature:&quot;Nature&quot;, history:&quot;Histoire&quot;, event:&quot;Événement&quot;, activity:&quot;Activité&quot;, alternative:&quot;Alternative&quot;, lodging:&quot;Hébergement Harriet&quot;};
+
+  const harrietWishlistUrl = &quot;https://www.airbnb.com/wishlists/invite/a214ae52-dc66-4216-80c6-22f5a71e9100?s=67&amp;unique_share_id=f67e9dec-63bc-4538-b2f9-769ca090a273&quot;;
+  const harrietNatureLodgings = [
+    {id:&quot;harriet-luray&quot;, name:&quot;Hébergement Harriet 1 · Luray&quot;, lon:-78.43672, lat:38.75585, day:&quot;Nuits 14–15&quot;, type:&quot;lodging&quot;, duration:&quot;2 nuits&quot;, priority:&quot;Base la plus pratique&quot;, description:&quot;Cabane avec jacuzzi, vue sur le lac et deux chambres. Environ 30 minutes de Shenandoah ; c’est la base retenue pour le parcours mix. Prix observé : 656 € pour deux nuits, à revérifier avant réservation.&quot;, url:&quot;https://www.airbnb.com/rooms/669800596063055523?adults=2&amp;check_in=2026-10-14&amp;check_out=2026-10-16&amp;guests=2&quot;},
+    {id:&quot;harriet-stanardsville&quot;, name:&quot;Hébergement Harriet 2 · Stanardsville&quot;, lon:-78.4496, lat:38.4009, day:&quot;Nuits 14–15&quot;, type:&quot;lodging&quot;, duration:&quot;2 nuits&quot;, priority:&quot;Alternative plus romantique&quot;, description:&quot;Cloud Haven : cabane isolée, lit king size, terrasse et baignoire suspendue. Plus romantique mais moins pratique pour le nord de Skyline Drive. Prix observé : 775 € pour deux nuits.&quot;, url:&quot;https://www.airbnb.com/rooms/1757587725357431926?adults=2&amp;check_in=2026-10-14&amp;check_out=2026-10-16&amp;guests=2&quot;}
+  ];
+
+  const harrietPittsburghLodgings = [
+    {id:&quot;harriet-pgh-1&quot;, name:&quot;Pittsburgh · proposition Harriet 1&quot;, lon:-80.0020, lat:40.4418, day:&quot;Nuits 15–17&quot;, type:&quot;lodging&quot;, duration:&quot;2 nuits&quot;, priority:&quot;Option à comparer&quot;, description:&quot;Loft historique avec deux chambres et parking. Prix observé dans la liste : environ 244 € pour deux nuits.&quot;, url:harrietWishlistUrl},
+    {id:&quot;harriet-pgh-2&quot;, name:&quot;Pittsburgh · proposition Harriet 2&quot;, lon:-79.9940, lat:40.4385, day:&quot;Nuits 15–17&quot;, type:&quot;lodging&quot;, duration:&quot;2 nuits&quot;, priority:&quot;Option à comparer&quot;, description:&quot;Deuxième loft historique avec deux chambres et parking, très proche du centre. Prix observé : environ 244 € pour deux nuits.&quot;, url:harrietWishlistUrl},
+    {id:&quot;harriet-pgh-3&quot;, name:&quot;Pittsburgh · proposition Harriet 3&quot;, lon:-80.0090, lat:40.4475, day:&quot;Nuits 15–17&quot;, type:&quot;lodging&quot;, duration:&quot;2 nuits&quot;, priority:&quot;Option la moins chère&quot;, description:&quot;Appartement moderne avec lit king size, vue sur la ville et parking. Prix observé : environ 222 € pour deux nuits.&quot;, url:harrietWishlistUrl}
+  ];
 
   const commonNature = [
     {id:&quot;front-royal&quot;, name:&quot;Front Royal&quot;, lon:-78.194, lat:38.918, day:&quot;Mer. 14&quot;, type:&quot;activity&quot;, duration:&quot;1–2 h&quot;, priority:&quot;Étape agréable&quot;, description:&quot;Petite ville servant de porte d’entrée nord à Shenandoah. Promenade et dîner avant une nuit sur place.&quot;, url:&quot;https://www.frontroyalva.com/gallery.aspx?PID=10&quot;},
@@ -1266,6 +1282,81 @@ html&gt;body{padding:0}&lt;/style&gt;
         {id:&quot;green-bank&quot;, name:&quot;Green Bank Observatory&quot;, lon:-79.839, lat:38.433, day:&quot;Extension&quot;, type:&quot;activity&quot;, duration:&quot;≈ 1 h&quot;, priority:&quot;Extrêmement original&quot;, description:&quot;Plus grand radiotélescope entièrement orientable au monde, au cœur d’une zone de silence radio.&quot;, url:&quot;https://greenbankobservatory.org/visit/&quot;},
         {id:&quot;seneca-rocks&quot;, name:&quot;Seneca Rocks&quot;, lon:-79.367, lat:38.834, day:&quot;Extension&quot;, type:&quot;nature&quot;, duration:&quot;30 min à 3 h 30&quot;, priority:&quot;Fortement recommandé&quot;, description:&quot;Formation rocheuse spectaculaire ; arrêt photographique rapide ou randonnée plus exigeante.&quot;, url:&quot;https://www.google.com/maps/search/?api=1&amp;query=Seneca+Rocks+Discovery+Center+West+Virginia&quot;}
       ]
+    },
+    mix: {
+      name:&quot;Mix Harriet–Guillaume · cabane, Shenandoah &amp; Bridge Day&quot;,
+      metrics:&quot;≈ 1 150–1 300 km · 16–18 h · retour lundi recommandé&quot;,
+      color:&quot;var(--viz-series-6)&quot;,
+      route:[
+        [-77.037,38.907],[-77.255,39.001],[-78.43672,38.75585],[-78.40,38.62],
+        [-80.297,37.796],[-81.104,38.052],[-81.07245,38.46172],[-78.167,39.186],[-77.037,38.907]
+      ],
+      stops:[
+        {name:&quot;Washington&quot;, lon:-77.037, lat:38.907, day:&quot;D0&quot;, dx:9, dy:-11},
+        {name:&quot;Great Falls&quot;, lon:-77.255, lat:39.001, day:&quot;Opt.&quot;, dx:10, dy:-11},
+        {name:&quot;Cabane Luray&quot;, lon:-78.43672, lat:38.75585, day:&quot;N1–2&quot;, dx:-94, dy:-10},
+        {name:&quot;Shenandoah&quot;, lon:-78.40, lat:38.62, day:&quot;J1&quot;, dx:-86, dy:22},
+        {name:&quot;Greenbrier&quot;, lon:-80.297, lat:37.796, day:&quot;J2&quot;, dx:-80, dy:20},
+        {name:&quot;Fayetteville&quot;, lon:-81.104, lat:38.052, day:&quot;N3–4&quot;, dx:-98, dy:-10},
+        {name:&quot;Elk River&quot;, lon:-81.07245, lat:38.46172, day:&quot;J4&quot;, dx:10, dy:-10},
+        {name:&quot;Winchester&quot;, lon:-78.167, lat:39.186, day:&quot;N5?&quot;, dx:-82, dy:-10}
+      ],
+      days:[
+        [&quot;Mer. 14&quot;, &quot;Washington → cabane de Luray ; Great Falls seulement si départ avant la fin d’après-midi&quot;, &quot;≈ 1 h 45 direct · nuit 1 à Luray&quot;],
+        [&quot;Jeu. 15&quot;, &quot;Boucle Skyline Drive + randonnée → retour à la même cabane&quot;, &quot;2–3 h de conduite locale · nuit 2 à Luray&quot;],
+        [&quot;Ven. 16&quot;, &quot;Luray → Greenbrier Bunker → Fayetteville → Taste of Bridge Day&quot;, &quot;≈ 4 h 30 · nuit dans la zone de Fayetteville&quot;],
+        [&quot;Sam. 17&quot;, &quot;Bridge Day + New River Gorge&quot;, &quot;Voiture presque inutile · 2e nuit dans la zone de Fayetteville&quot;],
+        [&quot;Dim. 18&quot;, &quot;Babcock → Rail Explorers Elk River → route vers Winchester&quot;, &quot;≈ 5 h 30 hors activité · nuit possible dans la zone&quot;],
+        [&quot;Lun. 19&quot;, &quot;Winchester → Washington&quot;, &quot;≈ 1 h 30 · arrivée avant midi&quot;],
+        [&quot;Retour dimanche&quot;, &quot;Rail Explorers → Washington directement&quot;, &quot;≈ 5 h après l’activité · arrivée tardive&quot;]
+      ],
+      points:[
+        {id:&quot;mix-great-falls&quot;, name:&quot;Great Falls Park&quot;, lon:-77.255, lat:39.001, day:&quot;Mer. 14 · option&quot;, type:&quot;nature&quot;, duration:&quot;1 h 30–2 h 30&quot;, priority:&quot;Uniquement avec un départ assez tôt&quot;, description:&quot;Rapides et belvédères spectaculaires près de Washington. En octobre, mieux vaut le placer avant la route et avant la tombée de la nuit.&quot;, url:&quot;https://www.nps.gov/grfa/index.htm&quot;},
+        ...harrietNatureLodgings,
+        {id:&quot;mix-skyline&quot;, name:&quot;Skyline Drive&quot;, lon:-78.40, lat:38.62, day:&quot;Jeu. 15&quot;, type:&quot;nature&quot;, duration:&quot;Journée&quot;, priority:&quot;Incontournable&quot;, description:&quot;Journée en boucle depuis la cabane de Luray : belvédères, couleurs d’automne et une randonnée, puis retour au même hébergement.&quot;, url:&quot;https://www.nps.gov/shen/planyourvisit/driving-skyline-drive.htm&quot;},
+        {id:&quot;mix-stony-man&quot;, name:&quot;Stony Man&quot;, lon:-78.372, lat:38.596, day:&quot;Jeu. 15&quot;, type:&quot;nature&quot;, duration:&quot;≈ 1 h 30&quot;, priority:&quot;Randonnée recommandée&quot;, description:&quot;Courte randonnée avec panorama, facile à combiner avec les belvédères de Skyline Drive depuis Luray.&quot;, url:&quot;https://www.nps.gov/thingstodo/hike-stony-man.htm&quot;},
+        {id:&quot;mix-greenbrier&quot;, name:&quot;The Greenbrier Bunker&quot;, lon:-80.297, lat:37.796, day:&quot;Ven. 16&quot;, type:&quot;history&quot;, duration:&quot;≈ 90 min&quot;, priority:&quot;Arrêt insolite sur la route&quot;, description:&quot;Ancien bunker secret du Congrès américain. Cette visite est compatible avec l’étape Luray–Fayetteville si elle est réservée assez tôt.&quot;, url:&quot;https://www.greenbrier.com/activities/bunker-tours/&quot;},
+        {id:&quot;mix-taste&quot;, name:&quot;Taste of Bridge Day&quot;, lon:-81.090, lat:38.071, day:&quot;Ven. 16 · 17 h&quot;, type:&quot;event&quot;, duration:&quot;17 h–21 h&quot;, priority:&quot;Bonus si l’arrivée est assez tôt&quot;, description:&quot;Food trucks, restaurants locaux, artistes et musique à Adventures on the Gorge.&quot;, url:&quot;https://visitwv.com/events/taste-of-bridge-day-2/&quot;},
+        {id:&quot;mix-bridge-day&quot;, name:&quot;Bridge Day&quot;, lon:-81.083, lat:38.068, day:&quot;Sam. 17&quot;, type:&quot;event&quot;, duration:&quot;9 h–15 h&quot;, priority:&quot;Événement exceptionnel&quot;, description:&quot;BASE jump, rappel et traversée piétonne du New River Gorge Bridge. Dormir deux nuits dans la zone évite tout changement d’hébergement le jour de l’événement.&quot;, url:&quot;https://officialbridgeday.com/&quot;},
+        {id:&quot;mix-long-point&quot;, name:&quot;Long Point Trail&quot;, lon:-81.078, lat:38.044, day:&quot;Sam. 17 ou dim. 18&quot;, type:&quot;nature&quot;, duration:&quot;≈ 2 h&quot;, priority:&quot;Meilleure vue sur le pont&quot;, description:&quot;Randonnée offrant la vue frontale emblématique sur le New River Gorge Bridge.&quot;, url:&quot;https://www.nps.gov/neri/planyourvisit/hiking.htm&quot;},
+        {id:&quot;mix-babcock&quot;, name:&quot;Babcock State Park&quot;, lon:-80.948, lat:38.001, day:&quot;Dim. 18&quot;, type:&quot;nature&quot;, duration:&quot;1–2 h&quot;, priority:&quot;Très photogénique&quot;, description:&quot;Moulin de Glade Creek et couleurs d’automne avant de remonter vers Elk River.&quot;, url:&quot;https://wvstateparks.com/parks/babcock-state-park/&quot;},
+        {id:&quot;mix-rail&quot;, name:&quot;Rail Explorers · Elk River&quot;, lon:-81.07245, lat:38.46172, day:&quot;Dim. 18&quot;, type:&quot;activity&quot;, duration:&quot;≈ 2 h&quot;, priority:&quot;Idée Harriet · horaire à confirmer&quot;, description:&quot;Douze miles en vélo sur rails à assistance électrique, le long de Buffalo Creek, avec cascade et falaises. Tandem annoncé à partir de 95 $. Vérifier l’ouverture des créneaux d’octobre 2026.&quot;, url:&quot;https://www.railexplorers.net/locations/elk-river&quot;}
+      ]
+    },
+    pittsburgh: {
+      name:&quot;Harriet · Pittsburgh par les Laurel Highlands&quot;,
+      metrics:&quot;≈ 950–1 050 km · 12–14 h · retour lundi&quot;,
+      color:&quot;var(--viz-series-4)&quot;,
+      route:[
+        [-77.037,38.907],[-78.504,40.018],[-78.904,39.906],[-79.468,39.900],
+        [-80.000,40.441],[-78.757,39.910],[-77.231,39.830],[-77.037,38.907]
+      ],
+      stops:[
+        {name:&quot;Washington&quot;, lon:-77.037, lat:38.907, day:&quot;D0&quot;, dx:9, dy:-11},
+        {name:&quot;Bedford&quot;, lon:-78.504, lat:40.018, day:&quot;N1&quot;, dx:-58, dy:-11},
+        {name:&quot;Flight 93&quot;, lon:-78.904, lat:39.906, day:&quot;J1&quot;, dx:-68, dy:20},
+        {name:&quot;Ohiopyle&quot;, lon:-79.468, lat:39.900, day:&quot;J1&quot;, dx:-68, dy:20},
+        {name:&quot;Pittsburgh&quot;, lon:-80.000, lat:40.441, day:&quot;N2–4&quot;, dx:-78, dy:-11},
+        {name:&quot;Gettysburg&quot;, lon:-77.231, lat:39.830, day:&quot;N5?&quot;, dx:10, dy:-11}
+      ],
+      days:[
+        [&quot;Mer. 14&quot;, &quot;Washington → Bedford&quot;, &quot;≈ 2 h 30 · nuit potentielle dans la zone, sans Airbnb proposé&quot;],
+        [&quot;Jeu. 15&quot;, &quot;Flight 93 Memorial → Fallingwater/Ohiopyle → Pittsburgh&quot;, &quot;≈ 3 h 30 · nuit Pittsburgh&quot;],
+        [&quot;Ven. 16&quot;, &quot;Strip District → musée Warhol → Downtown → Duquesne Incline&quot;, &quot;Peu de conduite · même logement&quot;],
+        [&quot;Sam. 17&quot;, &quot;Phipps Conservatory + quartiers de Pittsburgh&quot;, &quot;Peu de conduite · 3e nuit possible à Pittsburgh&quot;],
+        [&quot;Dim. 18&quot;, &quot;Pittsburgh → Gettysburg&quot;, &quot;≈ 3 h 15 · nuit potentielle dans la zone&quot;],
+        [&quot;Lun. 19&quot;, &quot;Gettysburg → Washington&quot;, &quot;≈ 1 h 30 · arrivée avant midi&quot;]
+      ],
+      points:[
+        {id:&quot;pgh-flight93&quot;, name:&quot;Flight 93 National Memorial&quot;, lon:-78.904, lat:39.906, day:&quot;Jeu. 15&quot;, type:&quot;history&quot;, duration:&quot;1 h 30–2 h&quot;, priority:&quot;Arrêt marquant&quot;, description:&quot;Mémorial national situé sur la route entre Bedford et les Laurel Highlands.&quot;, url:&quot;https://www.nps.gov/flni/index.htm&quot;},
+        {id:&quot;pgh-fallingwater&quot;, name:&quot;Fallingwater&quot;, lon:-79.468, lat:39.906, day:&quot;Jeu. 15&quot;, type:&quot;history&quot;, duration:&quot;2–3 h&quot;, priority:&quot;Réservation indispensable&quot;, description:&quot;Maison iconique de Frank Lloyd Wright construite au-dessus d’une cascade, à combiner avec Ohiopyle.&quot;, url:&quot;https://fallingwater.org/&quot;},
+        {id:&quot;pgh-ohiopyle&quot;, name:&quot;Ohiopyle State Park&quot;, lon:-79.494, lat:39.868, day:&quot;Jeu. 15&quot;, type:&quot;nature&quot;, duration:&quot;1–3 h&quot;, priority:&quot;Meilleure pause nature&quot;, description:&quot;Cascades, gorges et courts sentiers dans les Laurel Highlands avant de rejoindre Pittsburgh.&quot;, url:&quot;https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/ohiopyle-state-park&quot;},
+        ...harrietPittsburghLodgings,
+        {id:&quot;pgh-strip&quot;, name:&quot;Strip District&quot;, lon:-79.982, lat:40.452, day:&quot;Ven. 16&quot;, type:&quot;activity&quot;, duration:&quot;2–3 h&quot;, priority:&quot;Quartier le plus vivant&quot;, description:&quot;Marchés, cafés, boutiques et nourriture locale ; une bonne entrée en matière pour Pittsburgh.&quot;, url:&quot;https://www.visitpittsburgh.com/neighborhoods/strip-district/&quot;},
+        {id:&quot;pgh-warhol&quot;, name:&quot;The Andy Warhol Museum&quot;, lon:-80.002, lat:40.448, day:&quot;Ven. 16&quot;, type:&quot;activity&quot;, duration:&quot;2–3 h&quot;, priority:&quot;Très Pittsburgh&quot;, description:&quot;Le plus grand musée consacré à un seul artiste en Amérique du Nord, dans la ville natale de Warhol.&quot;, url:&quot;https://www.warhol.org/&quot;},
+        {id:&quot;pgh-incline&quot;, name:&quot;Duquesne Incline&quot;, lon:-80.018, lat:40.438, day:&quot;Ven. 16 · soir&quot;, type:&quot;activity&quot;, duration:&quot;45 min–1 h 30&quot;, priority:&quot;Meilleur panorama urbain&quot;, description:&quot;Funiculaire historique menant au panorama classique sur les trois rivières et le centre-ville.&quot;, url:&quot;https://www.duquesneincline.org/&quot;},
+        {id:&quot;pgh-phipps&quot;, name:&quot;Phipps Conservatory&quot;, lon:-79.948, lat:40.439, day:&quot;Sam. 17&quot;, type:&quot;activity&quot;, duration:&quot;2–3 h&quot;, priority:&quot;Belle activité de couple&quot;, description:&quot;Grand jardin botanique victorien dans Schenley Park, facile à combiner avec Oakland.&quot;, url:&quot;https://www.phipps.conservatory.org/&quot;}
+      ]
     }
   };
 
@@ -1288,7 +1379,10 @@ html&gt;body{padding:0}&lt;/style&gt;
     svg.attr(&quot;viewBox&quot;, `0 0 ${width} ${height}`);
     svg.selectAll(&quot;g.map-layer&quot;).remove();
 
-    const framingPoints = [...routes.virginia.route, ...routes.appalachia.route, ...routes.appalachia.extension, ...alternatives.map(d =&gt; [d.lon,d.lat])];
+    const framingPoints = [
+      ...Object.values(routes).flatMap(route =&gt; [...route.route, ...(route.extension || [])]),
+      ...alternatives.map(d =&gt; [d.lon,d.lat])
+    ];
     projection = d3.geoAlbers()
       .rotate([79, 0])
       .center([0, 38.45])
@@ -1340,7 +1434,7 @@ html&gt;body{padding:0}&lt;/style&gt;
       .attr(&quot;class&quot;,d=&gt;`poi-marker${d.id===selectedPointId?&quot; selected&quot;:&quot;&quot;}`)
       .attr(&quot;cx&quot;,d=&gt;projection([d.lon,d.lat])[0])
       .attr(&quot;cy&quot;,d=&gt;projection([d.lon,d.lat])[1])
-      .attr(&quot;r&quot;,d=&gt;d.type===&quot;alternative&quot;?7:6)
+      .attr(&quot;r&quot;,d=&gt;d.type===&quot;lodging&quot;?8:(d.type===&quot;alternative&quot;?7:6))
       .attr(&quot;fill&quot;,d=&gt;typeColors[d.type])
       .attr(&quot;data-tooltip&quot;,d=&gt;`${d.name} · ${d.day}`)
       .attr(&quot;aria-label&quot;,d=&gt;`${d.name}, ${d.day}`)
@@ -1353,6 +1447,8 @@ html&gt;body{padding:0}&lt;/style&gt;
     root.querySelector(&quot;#route-metrics&quot;).textContent = route.metrics;
     root.querySelector(&quot;#pick-virginia&quot;).setAttribute(&quot;aria-pressed&quot;,String(selectedRoute===&quot;virginia&quot;));
     root.querySelector(&quot;#pick-appalachia&quot;).setAttribute(&quot;aria-pressed&quot;,String(selectedRoute===&quot;appalachia&quot;));
+    root.querySelector(&quot;#pick-mix&quot;).setAttribute(&quot;aria-pressed&quot;,String(selectedRoute===&quot;mix&quot;));
+    root.querySelector(&quot;#pick-pittsburgh&quot;).setAttribute(&quot;aria-pressed&quot;,String(selectedRoute===&quot;pittsburgh&quot;));
     root.querySelector(&quot;#day-rows&quot;).innerHTML = route.days.map(d=&gt;`&lt;tr&gt;&lt;td class=&quot;text-nowrap&quot;&gt;&lt;strong&gt;${d[0]}&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;${d[1]}&lt;/td&gt;&lt;td&gt;${d[2]}&lt;/td&gt;&lt;/tr&gt;`).join(&quot;&quot;);
 
     const visible = allVisiblePoints();
@@ -1383,13 +1479,16 @@ html&gt;body{padding:0}&lt;/style&gt;
 
   function setRoute(key) {
     selectedRoute = key;
-    selectedPointId = key===&quot;virginia&quot; ? &quot;victory-weekend&quot; : &quot;bridge-day&quot;;
+    const defaults = {virginia:&quot;victory-weekend&quot;, appalachia:&quot;bridge-day&quot;, mix:&quot;harriet-luray&quot;, pittsburgh:&quot;harriet-pgh-1&quot;};
+    selectedPointId = defaults[key];
     renderRoute();
     renderMap();
   }
 
   root.querySelector(&quot;#pick-virginia&quot;).addEventListener(&quot;click&quot;,()=&gt;setRoute(&quot;virginia&quot;));
   root.querySelector(&quot;#pick-appalachia&quot;).addEventListener(&quot;click&quot;,()=&gt;setRoute(&quot;appalachia&quot;));
+  root.querySelector(&quot;#pick-mix&quot;).addEventListener(&quot;click&quot;,()=&gt;setRoute(&quot;mix&quot;));
+  root.querySelector(&quot;#pick-pittsburgh&quot;).addEventListener(&quot;click&quot;,()=&gt;setRoute(&quot;pittsburgh&quot;));
   root.querySelector(&quot;#show-alternatives&quot;).addEventListener(&quot;change&quot;,event=&gt;{
     showAlternatives = event.target.checked;
     if (!allVisiblePoints().some(p=&gt;p.id===selectedPointId)) selectedPointId = routes[selectedRoute].points[0].id;
