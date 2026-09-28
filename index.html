@@ -1376,7 +1376,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     &lt;div class=&quot;recommendations-head&quot;&gt;
       &lt;div&gt;
         &lt;h3 id=&quot;recommendations-title&quot;&gt;Événements et recommandations&lt;/h3&gt;
-        &lt;p class=&quot;text-small text-muted&quot;&gt;Classés d’abord par zone, puis par date. ★ indique un point visible sur la carte.&lt;/p&gt;
+        &lt;p class=&quot;text-small text-muted&quot;&gt;Classés d’abord par zone, puis par date. Les hébergements Airbnb apparaissent en rose corail ; l’hôtel Booking reste distinct en bleu.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;text-small text-muted&quot; aria-live=&quot;polite&quot;&gt;&lt;strong id=&quot;recommendation-count&quot;&gt;0&lt;/strong&gt; résultats&lt;/div&gt;
     &lt;/div&gt;
@@ -1503,6 +1503,14 @@ html&gt;body{padding:0}&lt;/style&gt;
     text-underline-offset: 3px;
   }
   #road-loops-map .zone-heading:not(:first-child) th { border-top: 14px solid var(--background); }
+  #road-loops-map .lodging-zone-row td { padding: 8px 10px; background: #ff385c; color: #fff; }
+  #road-loops-map .lodging-zone-row.hotel td { background: #003580; }
+  #road-loops-map .lodging-zone-content { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  #road-loops-map .lodging-zone-main { display: flex; align-items: baseline; gap: 6px 12px; flex-wrap: wrap; }
+  #road-loops-map .lodging-zone-provider,
+  #road-loops-map .lodging-zone-name { font-weight: 500; }
+  #road-loops-map .lodging-zone-row a { color: #fff; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  #road-loops-map .lodging-zone-row .lodging-status { opacity: .9; }
   #road-loops-map .fit-good { color: var(--green); }
   #road-loops-map .fit-choice { color: var(--orange); }
   #road-loops-map .fit-detour { color: var(--red); }
@@ -1821,6 +1829,18 @@ html&gt;body{padding:0}&lt;/style&gt;
     roanoke:&quot;Roanoke et Blacksburg&quot;,
     charlottesville:&quot;Charlottesville, Albemarle et Columbia&quot;
   };
+  const zoneLodgings = {
+    staunton:[{key:&quot;blackburn&quot;,night:&quot;16&quot;,provider:&quot;Hôtel · Booking&quot;,hotel:true}],
+    lexington:[
+      {key:&quot;lexDeerfield&quot;,night:&quot;17&quot;,provider:&quot;Airbnb · Option 1&quot;},
+      {key:&quot;lexPeony&quot;,night:&quot;17&quot;,provider:&quot;Airbnb · Option 2&quot;}
+    ],
+    charlottesville:[
+      {key:&quot;cvilleAfton&quot;,night:&quot;18&quot;,provider:&quot;Airbnb · Option 1&quot;},
+      {key:&quot;cvilleDowntown&quot;,night:&quot;18&quot;,provider:&quot;Airbnb · Option 2&quot;},
+      {key:&quot;cvilleIvy&quot;,night:&quot;18&quot;,provider:&quot;Airbnb · Option 3&quot;}
+    ]
+  };
   const tableState = {day:&quot;all&quot;,zone:&quot;all&quot;,type:&quot;all&quot;,fit:&quot;all&quot;};
   const recommendationRows = root.querySelector(&quot;#recommendation-rows&quot;);
   const recommendationEmpty = root.querySelector(&quot;#recommendation-empty&quot;);
@@ -1848,9 +1868,22 @@ html&gt;body{padding:0}&lt;/style&gt;
     recommendationCount.textContent = String(visible.length);
     recommendationEmpty.hidden = visible.length &gt; 0;
     let previousZone = &quot;&quot;;
+    function lodgingRows(zone) {
+      return (zoneLodgings[zone] || []).filter(item =&gt; tableState.day === &quot;all&quot; || item.night === tableState.day).map(item =&gt; {
+        const place = places[item.key];
+        return &#x27;&lt;tr class=&quot;lodging-zone-row&#x27; + (item.hotel ? &#x27; hotel&#x27; : &#x27;&#x27;) + &#x27;&quot;&gt;&lt;td colspan=&quot;7&quot;&gt;&#x27; +
+          &#x27;&lt;div class=&quot;lodging-zone-content&quot;&gt;&lt;div class=&quot;lodging-zone-main&quot;&gt;&#x27; +
+          &#x27;&lt;span class=&quot;lodging-zone-provider&quot;&gt;&#x27; + item.provider + &#x27; · nuit du &#x27; + item.night + &#x27;&lt;/span&gt;&#x27; +
+          &#x27;&lt;span class=&quot;lodging-zone-name&quot;&gt;&#x27; + place.name.replace(/^Nuit du \d+ · /, &#x27;&#x27;) + &#x27;&lt;/span&gt;&#x27; +
+          &#x27;&lt;span&gt;&#x27; + (place.price || &#x27;Prix à vérifier&#x27;) + &#x27;&lt;/span&gt;&#x27; +
+          &#x27;&lt;span class=&quot;lodging-status text-small&quot;&gt;&#x27; + (place.status || &#x27;&#x27;) + &#x27;&lt;/span&gt;&#x27; +
+          &#x27;&lt;/div&gt;&lt;a href=&quot;&#x27; + place.url + &#x27;&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot;&gt;Voir l’hébergement&lt;/a&gt;&lt;/div&gt;&#x27; +
+        &#x27;&lt;/td&gt;&lt;/tr&gt;&#x27;;
+      }).join(&quot;&quot;);
+    }
     recommendationRows.innerHTML = visible.map(item =&gt; {
       const heading = item.zone !== previousZone
-        ? &#x27;&lt;tr class=&quot;zone-heading&quot;&gt;&lt;th colspan=&quot;7&quot; scope=&quot;rowgroup&quot;&gt;&#x27; + zoneLabels[item.zone] + &#x27;&lt;/th&gt;&lt;/tr&gt;&#x27;
+        ? &#x27;&lt;tr class=&quot;zone-heading&quot;&gt;&lt;th colspan=&quot;7&quot; scope=&quot;rowgroup&quot;&gt;&#x27; + zoneLabels[item.zone] + &#x27;&lt;/th&gt;&lt;/tr&gt;&#x27; + lodgingRows(item.zone)
         : &quot;&quot;;
       previousZone = item.zone;
       return heading + &#x27;&lt;tr&gt;&#x27; +
