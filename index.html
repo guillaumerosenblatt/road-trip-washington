@@ -1745,7 +1745,7 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;/div&gt;
         &lt;svg class=&quot;rb-route-map&quot; viewBox=&quot;0 0 360 166&quot; role=&quot;img&quot; aria-labelledby=&quot;route-title route-desc&quot;&gt;
           &lt;title id=&quot;route-title&quot;&gt;Boucle du road trip colorée par journée&lt;/title&gt;
-          &lt;desc id=&quot;route-desc&quot;&gt;Jeudi de Washington à Luray, vendredi de Luray à Staunton, samedi de Staunton à Raphine, Lexington et Fishersville, dimanche de Lexington à Natural Bridge et Charlottesville, puis retour à Washington lundi.&lt;/desc&gt;
+          &lt;desc id=&quot;route-desc&quot;&gt;Jeudi de Washington à Luray, vendredi de Luray à Staunton, samedi de Staunton à Lexington et Fishersville, dimanche de Lexington à Natural Bridge et Charlottesville, puis retour à Washington lundi.&lt;/desc&gt;
           &lt;path class=&quot;map-land&quot; d=&quot;M18 20C74 3 137 18 176 10c53-11 125-5 165 25l-5 105c-67 16-138 11-194 19-51 7-99 0-124-21Z&quot; /&gt;
           &lt;path class=&quot;map-guide&quot; d=&quot;M35 38C92 58 106 88 147 102s85 25 174 13M44 125c74-30 136-63 267-72&quot; /&gt;
           &lt;path class=&quot;route thu&quot; data-route=&quot;thu&quot; d=&quot;M315 29C295 35 272 42 251 52&quot; /&gt;
@@ -1757,7 +1757,6 @@ html&gt;body{padding:0}&lt;/style&gt;
             &lt;circle class=&quot;city-dot&quot; cx=&quot;315&quot; cy=&quot;29&quot; r=&quot;4&quot; /&gt;&lt;text x=&quot;307&quot; y=&quot;19&quot; text-anchor=&quot;end&quot;&gt;Washington&lt;/text&gt;
             &lt;circle class=&quot;city-dot&quot; cx=&quot;251&quot; cy=&quot;52&quot; r=&quot;4&quot; /&gt;&lt;text x=&quot;244&quot; y=&quot;43&quot; text-anchor=&quot;end&quot;&gt;Luray&lt;/text&gt;
             &lt;circle class=&quot;city-dot&quot; cx=&quot;207&quot; cy=&quot;89&quot; r=&quot;4&quot; /&gt;&lt;text x=&quot;203&quot; y=&quot;79&quot; text-anchor=&quot;end&quot;&gt;Staunton&lt;/text&gt;
-            &lt;circle class=&quot;city-dot&quot; cx=&quot;186&quot; cy=&quot;106&quot; r=&quot;4&quot; /&gt;&lt;text x=&quot;177&quot; y=&quot;101&quot; text-anchor=&quot;end&quot;&gt;Raphine&lt;/text&gt;
             &lt;circle class=&quot;city-dot&quot; cx=&quot;165&quot; cy=&quot;119&quot; r=&quot;4&quot; /&gt;&lt;text x=&quot;159&quot; y=&quot;113&quot; text-anchor=&quot;end&quot;&gt;Lexington&lt;/text&gt;
             &lt;circle class=&quot;city-dot&quot; cx=&quot;212&quot; cy=&quot;98&quot; r=&quot;4&quot; /&gt;&lt;text x=&quot;219&quot; y=&quot;95&quot;&gt;Fishersville&lt;/text&gt;
             &lt;circle class=&quot;city-dot&quot; cx=&quot;137&quot; cy=&quot;145&quot; r=&quot;4&quot; /&gt;&lt;text x=&quot;129&quot; y=&quot;156&quot; text-anchor=&quot;end&quot;&gt;Natural Bridge&lt;/text&gt;
@@ -1775,8 +1774,8 @@ html&gt;body{padding:0}&lt;/style&gt;
 
       &lt;div class=&quot;rb-summary&quot;&gt;
         &lt;div&gt;
-          &lt;strong id=&quot;rb-route-summary&quot;&gt;Staunton → Raphine → Lexington → Fishersville&lt;/strong&gt;
-          &lt;span id=&quot;rb-route-detail&quot;&gt;3 activités · environ 2 h 30 de conduite avec le retour&lt;/span&gt;
+          &lt;strong id=&quot;rb-route-summary&quot;&gt;Staunton → Lexington → Fishersville&lt;/strong&gt;
+          &lt;span id=&quot;rb-route-detail&quot;&gt;2 activités principales · environ 2 h 30 de conduite&lt;/span&gt;
         &lt;/div&gt;
         &lt;div class=&quot;rb-progress&quot; id=&quot;rb-progress&quot;&gt;&lt;i data-lucide=&quot;circle-check&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 1/3 réservé&lt;/div&gt;
       &lt;/div&gt;
@@ -1828,11 +1827,13 @@ html&gt;body{padding:0}&lt;/style&gt;
       const days = {
         thu: {
           title: &#x27;Jeudi 15 octobre&#x27;, short: &#x27;Jeudi&#x27;, route: &#x27;Washington → Shenandoah → Luray&#x27;,
-          detail: &#x27;1 activité principale · environ 2 h 30 de conduite&#x27;, progress: &#x27;0/1 réservé&#x27;,
-          note: &#x27;Première journée&#x27;, lodging: &#x27;Dormir dans la zone de Luray&#x27;, lodgingDetail: &#x27;Hébergement encore à choisir&#x27;, lodgings: [],
+          detail: &#x27;Route panoramique vers Shenandoah · environ 2 h 30 de conduite&#x27;, progress: &#x27;0/1 réservé&#x27;,
+          note: &#x27;Première journée&#x27;, lodging: &#x27;Nuit du 15 · zone Shenandoah / Luray&#x27;, lodgingDetail: &#x27;Airbnb sélectionné · à réserver&#x27;,
+          lodgings: [
+            { id:&#x27;airbnb-613830542894769621&#x27;, name:&#x27;Airbnb sélectionné · nuit du 15&#x27;, place:&#x27;Zone Shenandoah / Luray&#x27;, price:&#x27;Prix à vérifier&#x27;, url:&#x27;https://www.airbnb.com/rooms/613830542894769621?adults=2&amp;check_in=2026-10-15&amp;check_out=2026-10-16&#x27; }
+          ],
           stops: [
-            { time:&#x27;09:00&#x27;, name:&#x27;Départ de Washington&#x27;, place:&#x27;Washington, DC&#x27;, status:&#x27;Trajet&#x27;, tone:&#x27;ok&#x27;, duration:&#x27;≈ 2 h 15&#x27;, price:&#x27;Direction Luray&#x27;, reserve:false },
-            { time:&#x27;12:30&#x27;, name:&#x27;Bear Mountain Ziplines&#x27;, place:&#x27;Luray&#x27;, status:&#x27;À réserver&#x27;, tone:&#x27;todo&#x27;, duration:&#x27;1 h 30–2 h&#x27;, price:&#x27;75 $ / personne&#x27;, reserve:true, url:&#x27;https://bearmountainadventure.com/&#x27; }
+            { time:&#x27;09:00&#x27;, name:&#x27;Départ de Washington&#x27;, place:&#x27;Washington, DC&#x27;, status:&#x27;Trajet&#x27;, tone:&#x27;ok&#x27;, duration:&#x27;≈ 2 h 15&#x27;, price:&#x27;Direction Shenandoah / Luray&#x27;, reserve:false }
           ],
           alternatives: [
             { name:&#x27;Luray Caverns&#x27;, place:&#x27;Luray&#x27;, time:&#x27;9 h–18 h&#x27;, price:&#x27;≈ 34 $ / adulte&#x27;, fit:&#x27;Facile à intégrer&#x27;, url:&#x27;https://luraycaverns.com/&#x27; },
@@ -1841,14 +1842,13 @@ html&gt;body{padding:0}&lt;/style&gt;
         },
         fri: {
           title: &#x27;Vendredi 16 octobre&#x27;, short: &#x27;Vendredi&#x27;, route: &#x27;Luray → Skyline Drive → Staunton&#x27;,
-          detail: &#x27;2 étapes principales · environ 3 h 30 de conduite avec les arrêts&#x27;, progress: &#x27;0/1 réservé&#x27;,
-          note: &#x27;Panoramas et arrivée à Staunton&#x27;, lodging: &#x27;Nuit à Staunton · The Blackburn Inn&#x27;, lodgingDetail: &#x27;À partir de 257 € au total&#x27;,
+          detail: &#x27;Skyline Drive puis Staunton · environ 3 h 30 avec les arrêts&#x27;, progress: &#x27;0/1 réservé&#x27;,
+          note: &#x27;Panoramas et arrivée à Staunton&#x27;, lodging: &#x27;Nuit du 16 · Staunton&#x27;, lodgingDetail: &#x27;The Blackburn Inn · à réserver&#x27;,
           lodgings: [
-            { name:&#x27;The Blackburn Inn&#x27;, place:&#x27;301 Greenville Avenue, Staunton&#x27;, price:&#x27;Dès 257 €&#x27;, url:&#x27;https://www.booking.com/hotel/us/the-blackburn-inn.en-gb.html?checkin=2026-10-16&amp;checkout=2026-10-17&amp;group_adults=2&amp;group_children=0&amp;no_rooms=1&#x27; }
+            { id:&#x27;blackburn-inn&#x27;, name:&#x27;The Blackburn Inn&#x27;, place:&#x27;301 Greenville Avenue, Staunton&#x27;, price:&#x27;Dès 257 €&#x27;, url:&#x27;https://www.booking.com/hotel/us/the-blackburn-inn.en-gb.html?checkin=2026-10-16&amp;checkout=2026-10-17&amp;group_adults=2&amp;group_children=0&amp;no_rooms=1&#x27; }
           ],
           stops: [
             { time:&#x27;08:30&#x27;, name:&#x27;Skyline Drive&#x27;, place:&#x27;Shenandoah National Park&#x27;, status:&#x27;Prévu&#x27;, tone:&#x27;ok&#x27;, duration:&#x27;≈ 3 h avec les panoramas&#x27;, price:&#x27;30 $ / voiture&#x27;, reserve:false, url:&#x27;https://www.nps.gov/shen/planyourvisit/driving-skyline-drive.htm&#x27; },
-            { time:&#x27;14:30&#x27;, name:&#x27;Frontier Culture Museum&#x27;, place:&#x27;Staunton&#x27;, status:&#x27;Sur le parcours&#x27;, tone:&#x27;ok&#x27;, duration:&#x27;1 h 30–2 h&#x27;, price:&#x27;Billet requis&#x27;, reserve:false, url:&#x27;https://visitshenandoah.org/poi/frontier-culture-museum/&#x27; },
             { time:&#x27;17:00&#x27;, name:&#x27;Roanoke GO Outside Festival&#x27;, place:&#x27;Roanoke&#x27;, status:&#x27;Option&#x27;, tone:&#x27;alt&#x27;, duration:&#x27;Festival jusqu’à 22 h&#x27;, price:&#x27;Gratuit · détour important&#x27;, reserve:false, alt:true, url:&#x27;https://roanokegofest.com/schedule/&#x27; }
           ],
           alternatives: [
@@ -1863,18 +1863,16 @@ html&gt;body{padding:0}&lt;/style&gt;
           ]
         },
         sat: {
-          title: &#x27;Samedi 17 octobre&#x27;, short: &#x27;Samedi&#x27;, route: &#x27;Staunton → Raphine → Lexington → Fishersville&#x27;,
-          detail: &#x27;3 activités · environ 2 h 30 de conduite avec le retour&#x27;, progress: &#x27;1/3 réservé&#x27;,
-          note: &#x27;Heures ajustables&#x27;, lodging: &#x27;Nuit à Lexington · Peony Ridge&#x27;, lodgingDetail: &#x27;Retour estimé vers 22 h 30&#x27;,
+          title: &#x27;Samedi 17 octobre&#x27;, short: &#x27;Samedi&#x27;, route: &#x27;Staunton → Lexington → Fishersville&#x27;,
+          detail: &#x27;2 activités principales · environ 2 h 30 de conduite&#x27;, progress: &#x27;0/3 réservé&#x27;,
+          note: &#x27;Heures ajustables&#x27;, lodging: &#x27;Nuit du 17 · Lexington&#x27;, lodgingDetail: &#x27;Peony Ridge · à réserver&#x27;,
           lodgings: [
-            { name:&#x27;Option 1 · Deerfield Cottage&#x27;, place:&#x27;Au sud de Lexington&#x27;, price:&#x27;Indisponible lors du dernier contrôle&#x27;, url:&#x27;https://www.airbnb.com/rooms/22013944?adults=2&amp;check_in=2026-10-17&amp;check_out=2026-10-18&#x27; },
-            { name:&#x27;Option 2 · Peony Ridge&#x27;, place:&#x27;À 15 minutes au nord de Lexington&#x27;, price:&#x27;≈ 101 €&#x27;, url:&#x27;https://www.airbnb.com/rooms/1760472951035129651?adults=2&amp;check_in=2026-10-17&amp;check_out=2026-10-18&#x27; }
+            { id:&#x27;airbnb-1760472951035129651&#x27;, name:&#x27;Peony Ridge&#x27;, place:&#x27;À 15 minutes au nord de Lexington&#x27;, price:&#x27;≈ 101 €&#x27;, url:&#x27;https://www.airbnb.com/rooms/1760472951035129651?adults=2&amp;check_in=2026-10-17&amp;check_out=2026-10-18&#x27; }
           ],
           stops: [
-            { time:&#x27;10:00&#x27;, name:&#x27;Wade’s Mill Apple Butter Festival&#x27;, place:&#x27;Raphine&#x27;, status:&#x27;Gratuit&#x27;, tone:&#x27;ok&#x27;, duration:&#x27;1 h 30&#x27;, price:&#x27;25 min depuis Staunton&#x27;, reserve:false, url:&#x27;https://www.wadesmill.com/event/30th-annual-apple-butter-festival-saturday-october-17-2026/&#x27; },
-            { time:&#x27;13:15&#x27;, name:&#x27;Promenade historique en calèche&#x27;, place:&#x27;Lexington Visitor Center&#x27;, status:&#x27;À réserver&#x27;, tone:&#x27;todo&#x27;, duration:&#x27;50 min&#x27;, price:&#x27;30 $ / personne&#x27;, reserve:true, url:&#x27;https://www.lexcarriage.com/historical-tours.html&#x27; },
-            { time:&#x27;19:00&#x27;, name:&#x27;Stampede Rodeo &amp; Bull Riding&#x27;, place:&#x27;Augusta Expo, Fishersville&#x27;, status:&#x27;Billets à prendre&#x27;, tone:&#x27;todo&#x27;, duration:&#x27;2 h 30&#x27;, price:&#x27;25 $ + parking&#x27;, reserve:true, url:&#x27;https://visitstaunton.com/event/stampede-rodeo-and-bull-riding/&#x27; },
-            { time:&#x27;TBA&#x27;, name:&#x27;Virginia Tech–Georgia Tech · Homecoming&#x27;, place:&#x27;Lane Stadium, Blacksburg&#x27;, status:&#x27;Alternative&#x27;, tone:&#x27;alt&#x27;, duration:&#x27;≈ 3 h 30&#x27;, price:&#x27;Match complet · revente&#x27;, reserve:true, alt:true, url:&#x27;https://hokiesports.com/sports/football/schedule/season/2026&#x27; }
+            { id:&#x27;carriage&#x27;, time:&#x27;13:15&#x27;, name:&#x27;Promenade historique en calèche&#x27;, place:&#x27;Lexington Visitor Center&#x27;, status:&#x27;À réserver&#x27;, tone:&#x27;todo&#x27;, duration:&#x27;50 min&#x27;, price:&#x27;30 $ / personne&#x27;, reserve:true, url:&#x27;https://www.lexcarriage.com/historical-tours.html&#x27; },
+            { id:&#x27;stampede&#x27;, time:&#x27;19:00&#x27;, name:&#x27;Stampede Rodeo &amp; Bull Riding&#x27;, place:&#x27;Augusta Expo, Fishersville&#x27;, status:&#x27;Billets à prendre&#x27;, tone:&#x27;todo&#x27;, duration:&#x27;2 h 30&#x27;, price:&#x27;25 $ + parking&#x27;, reserve:true, url:&#x27;https://visitstaunton.com/event/stampede-rodeo-and-bull-riding/&#x27; },
+            { id:&#x27;homecoming&#x27;, time:&#x27;TBA&#x27;, name:&#x27;Virginia Tech–Georgia Tech · Homecoming&#x27;, place:&#x27;Lane Stadium, Blacksburg&#x27;, status:&#x27;Alternative&#x27;, tone:&#x27;alt&#x27;, duration:&#x27;≈ 3 h 30&#x27;, price:&#x27;Match complet · revente&#x27;, reserve:true, alt:true, url:&#x27;https://hokiesports.com/sports/football/schedule/season/2026&#x27; }
           ],
           alternatives: [
             { name:&#x27;Bridge Day&#x27;, place:&#x27;Fayetteville, WV&#x27;, time:&#x27;9 h–15 h&#x27;, price:&#x27;Gratuit&#x27;, fit:&#x27;Très grand détour · remplace le programme&#x27;, url:&#x27;https://officialbridgeday.com/bridge-day-info&#x27; },
@@ -1890,15 +1888,13 @@ html&gt;body{padding:0}&lt;/style&gt;
         sun: {
           title: &#x27;Dimanche 18 octobre&#x27;, short: &#x27;Dimanche&#x27;, route: &#x27;Lexington → Natural Bridge → Charlottesville&#x27;,
           detail: &#x27;3 étapes · environ 2 h de conduite&#x27;, progress: &#x27;0/2 réservé&#x27;,
-          note: &#x27;Nature puis soirée à Charlottesville&#x27;, lodging: &#x27;Nuit à Charlottesville · 3 options Airbnb&#x27;, lodgingDetail: &#x27;162 €, 180 € ou 265 € selon l’option&#x27;,
+          note: &#x27;Nature puis soirée à Charlottesville&#x27;, lodging: &#x27;Nuit du 18 · Charlottesville&#x27;, lodgingDetail: &#x27;Appartement central · à réserver&#x27;,
           lodgings: [
-            { name:&#x27;Option 1 · Blue Ridge Retreat&#x27;, place:&#x27;Afton&#x27;, price:&#x27;≈ 162 €&#x27;, url:&#x27;https://www.airbnb.com/rooms/28109000?adults=2&amp;check_in=2026-10-18&amp;check_out=2026-10-19&#x27; },
-            { name:&#x27;Option 2 · Appartement central&#x27;, place:&#x27;Charlottesville Downtown&#x27;, price:&#x27;≈ 180 €&#x27;, url:&#x27;https://www.airbnb.com/rooms/1209619159300282724?adults=2&amp;check_in=2026-10-18&amp;check_out=2026-10-19&#x27; },
-            { name:&#x27;Option 3 · Ivy Rose Tea House&#x27;, place:&#x27;Ivy&#x27;, price:&#x27;≈ 265 €&#x27;, url:&#x27;https://www.airbnb.com/rooms/585348135215975015?adults=2&amp;check_in=2026-10-18&amp;check_out=2026-10-19&#x27; }
+            { id:&#x27;airbnb-1209619159300282724&#x27;, name:&#x27;Appartement central&#x27;, place:&#x27;Charlottesville Downtown&#x27;, price:&#x27;≈ 180 €&#x27;, url:&#x27;https://www.airbnb.com/rooms/1209619159300282724?adults=2&amp;check_in=2026-10-18&amp;check_out=2026-10-19&#x27; }
           ],
           stops: [
             { time:&#x27;09:00&#x27;, name:&#x27;Natural Bridge State Park&#x27;, place:&#x27;Natural Bridge&#x27;, status:&#x27;Prévu&#x27;, tone:&#x27;ok&#x27;, duration:&#x27;1 h 30–2 h&#x27;, price:&#x27;≈ 9 $ / personne&#x27;, reserve:false, url:&#x27;https://virginiastateparks.gov/state-parks/natural-bridge&#x27; },
-            { time:&#x27;13:30&#x27;, name:&#x27;Monticello&#x27;, place:&#x27;Charlottesville&#x27;, status:&#x27;À réserver&#x27;, tone:&#x27;todo&#x27;, duration:&#x27;2 h&#x27;, price:&#x27;À partir de 42 $&#x27;, reserve:true, url:&#x27;https://www.monticello.org/visit/tickets-tours&#x27; },
+            { id:&#x27;monticello&#x27;, time:&#x27;13:30&#x27;, name:&#x27;Monticello&#x27;, place:&#x27;Charlottesville&#x27;, status:&#x27;À réserver&#x27;, tone:&#x27;todo&#x27;, duration:&#x27;2 h&#x27;, price:&#x27;À partir de 42 $&#x27;, reserve:true, url:&#x27;https://www.monticello.org/visit/tickets-tours&#x27; },
             { time:&#x27;17:30&#x27;, name:&#x27;Decades Arcade&#x27;, place:&#x27;Charlottesville&#x27;, status:&#x27;Ouvert jusqu’à 19 h&#x27;, tone:&#x27;ok&#x27;, duration:&#x27;1 h 30&#x27;, price:&#x27;12 $ / personne&#x27;, reserve:false, url:&#x27;https://www.decadesarcade.com/&#x27; }
           ],
           alternatives: [
@@ -1949,7 +1945,7 @@ html&gt;body{padding:0}&lt;/style&gt;
         `&lt;option value=&quot;${item.value}&quot;${item.value === state ? &#x27; selected&#x27; : &#x27;&#x27;}&gt;${item.label}&lt;/option&gt;`
       ).join(&#x27;&#x27;);
       const stopMarkup = (stop, index) =&gt; {
-        const reservationKey = `${selectedDay}-activity-${index}`;
+        const reservationKey = `${selectedDay}-activity-${stop.id || index}`;
         const initialState = stop.bookingState || (stop.alt ? &#x27;planned&#x27; : &#x27;todo&#x27;);
         const currentState = reservationStates[reservationKey] || initialState;
         const mapQuery = encodeURIComponent(`${stop.name}, ${stop.place}`);
@@ -1989,7 +1985,7 @@ html&gt;body{padding:0}&lt;/style&gt;
       };
 
       const lodgingMarkup = (item, index) =&gt; {
-        const reservationKey = `${selectedDay}-lodging-${index}`;
+        const reservationKey = `${selectedDay}-lodging-${item.id || index}`;
         const currentState = reservationStates[reservationKey] || &#x27;todo&#x27;;
         const mapQuery = encodeURIComponent(`${item.name}, ${item.place}`);
         return `&lt;div class=&quot;rb-lodging-option&quot;&gt;
@@ -2031,11 +2027,11 @@ html&gt;body{padding:0}&lt;/style&gt;
         routeSummary.textContent = day.route;
         routeDetail.textContent = day.detail;
         const bookableKeys = day.stops.reduce((keys, stop, index) =&gt; {
-          if (stop.reserve) keys.push(`${selectedDay}-activity-${index}`);
+          if (stop.reserve) keys.push(`${selectedDay}-activity-${stop.id || index}`);
           return keys;
         }, []);
         const activityConfirmed = bookableKeys.filter((key) =&gt; [&#x27;booked&#x27;, &#x27;paid&#x27;].includes(reservationStates[key])).length;
-        const lodgingKeys = (day.lodgings || []).map((item, index) =&gt; `${selectedDay}-lodging-${index}`);
+        const lodgingKeys = (day.lodgings || []).map((item, index) =&gt; `${selectedDay}-lodging-${item.id || index}`);
         const lodgingConfirmed = lodgingKeys.some((key) =&gt; [&#x27;booked&#x27;, &#x27;paid&#x27;].includes(reservationStates[key])) ? 1 : 0;
         const totalReservations = bookableKeys.length + (lodgingKeys.length ? 1 : 0);
         const confirmed = activityConfirmed + lodgingConfirmed;
